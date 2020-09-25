@@ -32,7 +32,6 @@ typedef vector<vi> vvi;
 #define all(x) (x).begin(), (x).end()
 #define ang2rad(x) 180/3.14*(x)
 
-
 const string ALP = "abcdefghijklmnopqrstuvwxyz";
 const string ALPB = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
