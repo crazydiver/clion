@@ -60,11 +60,11 @@ std::ostream &operator<<(std::ostream & out, const Fraction & fr) {
 
 
 
-std::istream &operator<<(std::istream &in, Fraction &fr) {
-    int i1, i2;
-    in >> i1 >> i2;
-    Contraction(i1, i2);
-    fr.a = i1;
-    fr.b = i2;
-    return in;
+std::istream &operator>>(std::istream &in, Fraction &fr) {
+	int i1, i2;
+	in >> i1 >> i2;
+	Contraction(i1, i2);
+	fr.a = i1;
+	fr.b = i2;
+	return in;
 }

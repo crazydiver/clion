@@ -7,17 +7,23 @@
 #define CLION_FRACTION_H
 
 
-class Fraction{
+class Fraction {
 private:
-    int a{}, b{};
+	int a {}, b {};
 public:
-    Fraction();
-    Fraction(const Fraction &);
-    explicit Fraction(int a);
-    Fraction(int a, int b);
-    void output() const;
-    friend std::ostream & operator << (std::ostream &, const Fraction &);
-    friend std::istream & operator << (std::istream &, const Fraction &);
+	Fraction();
+	
+	Fraction(const Fraction &);
+	
+	explicit Fraction(int a);
+	
+	Fraction(int a, int b);
+	
+	void output() const;
+	
+	friend std::ostream &operator<<(std::ostream &, const Fraction &);
+	
+	friend std::istream &operator>>(std::istream &, const Fraction &);
 };
 
 
